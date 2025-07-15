@@ -1,0 +1,54 @@
+{
+  "name": "second-hand-listing-manager",
+  "version": "1.0.0",
+  "description": "Centralized platform for managing second-hand listings on willhaben and eBay",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "client": "cd client && npm start",
+    "server": "nodemon server.js",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "npm run build"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.5.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "multer": "^1.4.5-lts.1",
+    "axios": "^1.5.0",
+    "bcrypt": "^5.1.1",
+    "jsonwebtoken": "^9.0.2",
+    "express-rate-limit": "^6.10.0",
+    "helmet": "^7.0.0",
+    "express-validator": "^7.0.1",
+    "cloudinary": "^1.40.0",
+    "cheerio": "^1.0.0-rc.12",
+    "puppeteer": "^21.1.1",
+    "csv-writer": "^1.6.0",
+    "xlsx": "^0.18.5",
+    "uuid": "^9.0.0",
+    "node-cron": "^3.0.2",
+    "socket.io": "^4.7.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "jest": "^29.7.0",
+    "supertest": "^6.3.3"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "keywords": [
+    "second-hand",
+    "listings",
+    "willhaben",
+    "ebay",
+    "marketplace",
+    "inventory"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
